@@ -32,7 +32,7 @@ jobs:
           if [ $VERSION_TAG == $PACKAGE_VERSION ]; then exit 0; else exit 1; fi
   build-onefile:
     name: Build onefile
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     container: python:3.9-slim
     needs: version-check
     steps:
@@ -74,7 +74,7 @@ jobs:
           path: dist/nitrokey-app
   publish-binary:
     name: Publish binary
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     container: python:3.9-slim
     needs: build-onefile
     permissions:
