@@ -1,4 +1,4 @@
-name: Continuous delivery - Linux
+name: Continuous delivery - Linux arm64
 
 on:
   release:
