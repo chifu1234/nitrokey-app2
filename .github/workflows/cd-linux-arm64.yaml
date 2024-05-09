@@ -7,7 +7,7 @@ on:
 jobs:
   version-check:
     name: Check versioning
-    runs-on: macos-large
+    runs-on: macos-latest
     container: python:3.9-slim
     steps:
       - name: Checkout repository
